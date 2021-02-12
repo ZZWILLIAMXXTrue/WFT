@@ -32,6 +32,7 @@ class FloatingTextCommand extends Command {
                         case "summon":
                         case "new":
                         case "make":
+                        case "a":
                             if ($sender->hasPermission("wft.add")) {
                                 $this->plugin->openCreation($sender);
                             } else {
@@ -42,6 +43,7 @@ class FloatingTextCommand extends Command {
                         case "delete":
                         case "bye":
                         case "remove":
+                        case "r":
                             if ($sender->hasPermission("wft.remove")) {
                                 $this->plugin->openRemove($sender);
                             } else {
